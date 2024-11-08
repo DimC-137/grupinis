@@ -1,0 +1,82 @@
+/* primary background: #00856F; */
+/* brand-green background: #DCE9E2; */
+/* brqand-green-light background: #F7F9F9; */
+/* brand beige background: #FFFAF1; */
+/* brand green hover background: #00453A; */
+
+/* headline background: #061800; */
+/* paragraph background: #384633; */
+/* white backgroud: #3E3E3E */
+
+/* reset */
+h1, h2, h3, h4, h5, h6, p, ul,  ol, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+
+}
+
+header nav ul{
+    display: flex;
+    justify-content: center;
+    column-gap: 32px;
+}
+
+nav {
+    background-color: #DCE9E2;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    height: 72px;
+    color: #F7F9F9;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: #00856F70;
+    font-size: 16px;
+    font-weight: 400;
+                        
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    list-style: none;
+    color: #00856F;
+    font-size: 16px;
+    font-weight: 700;
+                    
+}
+
+header nav div button {
+    height: 38px;
+    width: 190px;
+    border-radius: 40px;
+    background-color: #DCE9E2;
+    border-color: #00856F;
+    border-style: solid;
+    border-width: 1px;
+}
+
+header div {
+    color: #061800;
+}
+header nav div button a {
+    color: #00856F;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+}
