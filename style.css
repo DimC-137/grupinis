@@ -9,7 +9,7 @@
 /* white backgroud: #3E3E3E */
 
 /* reset */
-h1, h2, h3, h4, h5, h6, p, ul,  ol, li {
+h1, h2, h3, h4, h5, h6, p, ul, ol, li {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -23,14 +23,16 @@ h1, h2, h3, h4, h5, h6, p, ul,  ol, li {
 
 body {
     font-family: "DM Sans", sans-serif;
-
+   
 }
 
 header nav ul{
     display: flex;
+    width: 400px;
     justify-content: center;
     column-gap: 32px;
 }
+
 
 nav {
     background-color: #DCE9E2;
@@ -39,24 +41,30 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 72px;
+        
 }
 
 nav ul li a{
+    display: flex;
+    position: relative;
     text-decoration: none;
     list-style: none;
     color: #00856F70;
     font-size: 16px;
     font-weight: 400;
-                        
+    width: 100%;
+                              
 }
 
 nav ul li a:hover {
+    position: relative;
+    display: flex;
     text-decoration: none;
     list-style: none;
     color: #00856F;
     font-size: 16px;
     font-weight: 700;
-                    
+                                        
 }
 
 header nav div button {
@@ -71,6 +79,7 @@ header nav div button {
 }
 
 .doctor {
+    font-size: 20px;
     color: #061800;
 }
 header nav div a button {
@@ -84,4 +93,5 @@ nav button:hover {
     background-color: #00856F;
     color: white;
     cursor: pointer;
+
 }
