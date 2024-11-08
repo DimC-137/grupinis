@@ -39,8 +39,6 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 72px;
-    color: #F7F9F9;
-
 }
 
 nav ul li a{
@@ -69,14 +67,20 @@ header nav div button {
     border-color: #00856F;
     border-style: solid;
     border-width: 1px;
+    
 }
 
-header div {
+.doctor {
     color: #061800;
 }
-header nav div button a {
+header nav div a button {
     color: #00856F;
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
+}
+
+nav button:hover {
+    background-color: #00856F;
+    color: white;
 }
