@@ -5,8 +5,13 @@
 /* brand green hover background: #00453A; */
 
 /* headline background: #061800; */
-/* paragraph background: #384633; */
+/* gray paragraph: #384633; */
 /* white backgroud: #3E3E3E */
+ 
+:root {
+    --ld: 1120px;
+    --xl: 1366px;
+}
 
 /* reset */
 h1, h2, h3, h4, h5, h6, p, ul, ol, li {
@@ -16,14 +21,30 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li {
     text-decoration: none;
 }
 
+h1 {
+    padding: 16px 0 24px 0;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 68px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color:#00856F;
+}
+
 * {
     box-sizing: border-box;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: "DM Sans", sans-serif;
-   
+    justify-content: center;
+    
 }
 
 header nav ul{
@@ -34,17 +55,35 @@ header nav ul{
 }
 
 
-nav {
+
+header {
     background-color: #DCE9E2;
+    max-width: var(--xl);
+    z-index: -1;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+}
+
+nav {
     display: flex;
     position: relative;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 72px;
+    width: 100%;
+    max-width: var(--ld);
         
 }
 
-nav ul li a{
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
     display: flex;
     position: relative;
     text-decoration: none;
@@ -52,8 +91,7 @@ nav ul li a{
     color: #00856F70;
     font-size: 16px;
     font-weight: 400;
-    width: 100%;
-                              
+                                            
 }
 
 nav ul li a:hover {
@@ -64,7 +102,9 @@ nav ul li a:hover {
     color: #00856F;
     font-size: 16px;
     font-weight: 700;
-                                        
+    border-bottom: 2px solid #00856F;
+    line-height: 72px;
+                                                     
 }
 
 header nav div button {
@@ -75,23 +115,402 @@ header nav div button {
     border-color: #00856F;
     border-style: solid;
     border-width: 1px;
-    
-}
-
-.doctor {
-    font-size: 20px;
-    color: #061800;
-}
-header nav div a button {
     color: #00856F;
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
 }
 
+.doctor {
+    font-size: 20px;
+    color: #061800;
+}
+
 nav button:hover {
     background-color: #00856F;
     color: white;
     cursor: pointer;
+}
 
+#l1 { 
+    width: 39px;
+        
+}
+#l2 {
+    width: 44px;
+        
+}
+#l3 {
+    width:64px;
+        
+}
+#l4 {
+    width:100px;
+        
+}
+
+section {
+    display: flex;
+    max-width: var(--xl);
+    justify-content: center;
+    width: 100%;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+main {
+    max-width: var(--xl);
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    /* background-color: #F7F9F9; */
+    flex-wrap: wrap;
+}
+
+div.container {
+    padding-top: 80px;
+    height: 606px;
+    width: 100%;
+    max-width: var(--ld);
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+
+main .contato {
+    background-color: #FFFAF1;;
+    height: 734px;
+    position: relative;
+    display: flex;
+}
+
+section .contato-bin {
+    height: 734px;
+    width: var(--ld);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 67px;
+}
+
+main .sobre {
+    background-color: white;
+    height: 699px;
+    position: relative;
+    display: flex;
+}
+
+section .sobre-bin {
+    height: 699px;
+    max-width: var(--ld);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 67px;
+    width: 100%;
+}
+
+section.hero {
+    background-color: #DCE9E2; 
+    width: 100%;
+    max-width: var(--xl);
+}
+
+.heat {
+    color: #00856F;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.08em;
+}
+
+h1 {
+    width: 605px;
+}
+
+.hero .container div.container-bin {
+    display: flex;
+    flex-direction: column;
+    width: 605px;
+    height: 335px;
+}
+
+section.hero img {
+    position: relative;
+    height: 549px;
+    width: 420px;
+    top: -90px;
+    left: 50px;
+}
+
+.heatp {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400; 
+    color: #384633;
+    margin-bottom: 32px;
+}
+
+button.hb {
+    
+    background-color: #00856F;
+    width: 263px;
+    height: 52px;
+    border-radius: 40px;
+    /* padding: 16px 32px; */
+    gap: 16px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+a button.hb:hover {
+    background-color: transparent;
+    color: #00856F;
+    width: 263px;
+    height: 52px;
+    border-radius: 40px;
+    gap: 16px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    border: 1px solid #00856F;
+    p {color: #00856F;}    
+    svg {fill: #00856F;}
+}
+
+.beigebox {
+    position: relative;
+    top: -130px;
+    width: 1120px;
+    height: 210px;
+    background-color: #FFFAF1;
+    border: 1px solid #DCE9E2; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.beigebox-bin {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 881px;
+    height: 90px;
+}
+
+section.hero button.hb svg {
+    width: 17px;
+    height: 17x;
+    fill: #FFFAF1;
+}
+
+button.hb p {
+    color: #DCE9E2;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration-skip-ink: none;
+}
+
+.bold1 {
+    color: #061800;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 63px;
+    text-align: center;
+}
+
+.bold2 {
+    color: #00856F;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.bb {
+    border-right: 1px solid #00856F50;
+    border-left: 1px solid #00856F50;
+    width: 383px;
+}
+
+.servicos {
+    background-color: #F7F9F9;
+    height: 1082px;
+    max-width: var(--xl);
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.servicos .servicos-bin {
+    max-width: var(--ld);
+    height: 1082px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    
+}
+
+.cards-services {
+    width: 1121px;
+    height: 454px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 347px;
+    height: 207px;
+    gap: 16px;
+    padding: 24px;
+    background-color: white;
+    border: 1px solid #DCE9E2;
+    margin: 20px 0;
+}
+
+.text1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.text2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #384633;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    width: 497px;
+    margin-bottom: 44px;
+}
+
+.servicos h2{
+    margin-top: 90px;
+    margin-bottom: 16px;
+}
+
+.servicos .title {
+    top: 300px;
+}
+
+section.contato img{
+    width: 480px;
+    height: 414px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+section.contato div.doctormask {
+    height: 414px;
+    width: 480px;
+    border-radius: 10px;
+    background-color: #00856F15;
+    position: absolute;
+}
+
+.contato-bin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.contato .title {
+    text-align: left;
+    width: 447px;
+    margin-top: 10px;
+    margin-bottom: 24px;
+    letter-spacing: 1.5px;
+}
+
+section.sobre div.doctormask {
+    width: 575px;
+    height: 379px;
+    border-radius: 10px;
+    background-color: #00856F15;
+    position: absolute;
+    left: 545px;
+}
+
+section.sobre .sobre-bin img.customer {
+    width: 575px;
+    height: 379px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.sobre-bin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: ;
+}
+
+.sobre h2{
+    color: #061800;
+    text-align: left;
+    width: 380px;
+    margin-bottom: 30px;
+}
+
+.sobre-bin-container p.text2 {
+    margin: 8px 0;
+    text-align: center;
+    display: inline;
+}
+
+svg.mappin {
+    width: 18px;
+    height: 22px;
+    display: inline;
+}
+
+svg.mail {
+    width: 20px;
+    height: 16px;
+    display: inline;
+}
+
+div.contacts {
+    align-items: center;
+    display: flex;
+    gap: 11px;
+}
+
+.sobre button {
+    margin-top: 30px;
+}
+
+section.sobre button.hb svg path{
+    width: 17px;
+    height: 17x;
+    fill: #FFFAF1;
 }
