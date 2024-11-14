@@ -471,8 +471,7 @@ section.sobre .sobre-bin img.customer {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    gap: ;
-}
+ }
 
 .sobre h2{
     color: #061800;
