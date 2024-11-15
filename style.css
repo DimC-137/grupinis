@@ -63,7 +63,7 @@ header {
     display: flex;
     width: 100%;
     justify-content: center;
-    position: relative;
+    /* position: relative; */
     margin: auto;
 }
 
@@ -283,7 +283,7 @@ a button.hb:hover {
     cursor: pointer;
     border: 1px solid #00856F;
     p {color: #00856F;}    
-    svg {fill: #00856F;}
+    svg path {fill: #00856F;}
 }
 
 .beigebox {
@@ -307,11 +307,12 @@ a button.hb:hover {
     height: 90px;
 }
 
-section.hero button.hb svg {
+button.hb svg path{
     width: 17px;
     height: 17x;
     fill: #FFFAF1;
 }
+
 
 button.hb p {
     color: #DCE9E2;
@@ -506,10 +507,4 @@ div.contacts {
 
 .sobre button {
     margin-top: 30px;
-}
-
-section.sobre button.hb svg path{
-    width: 17px;
-    height: 17x;
-    fill: #FFFAF1;
 }
