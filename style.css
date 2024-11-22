@@ -593,3 +593,61 @@ div.contacts {
     margin-top: 30px;
 }
 
+/* VYTAUTAS */
+
+footer {
+    display: inline-flex;
+    position:relative;
+    justify-content: space-between;
+    background-color: #00856F;
+    width: 1366px;
+    height: 268px;
+    }
+     
+    .ft {
+        margin: auto 0 auto 123px;
+    }
+     
+    .ft1 svg {
+        fill:white;
+    }
+    .ft2 {
+        margin-top: 24px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #FFFAF1;
+     
+    }
+    .ft3 {
+        margin-top: 15px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #FFFAF1;
+    }
+     
+    .ft2, .ft3 {
+        color: #FFFAF1;
+    }
+     
+    .socials {
+        display: inline-flex;
+        align-items: center;
+        gap: 34px;
+        margin: auto 123px auto 0;
+    }
+     
+    .svg1, .svg2, .svg3 {
+        fill: #FFFAF1;
+        cursor: pointer;
+    }
+     
+    .svg2, .svg3 {
+        font-size: 18px;
+        gap: 15px;
+    }
