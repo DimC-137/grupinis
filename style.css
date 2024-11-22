@@ -44,6 +44,8 @@ h2 {
 body {
     font-family: "DM Sans", sans-serif;
     justify-content: center;
+    width: 100%;
+    position: relative;
     
 }
 
@@ -54,20 +56,37 @@ header nav ul{
     column-gap: 32px;
 }
 
+div.headai {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
 
 
-header {
+header.header1 {
     background-color: #DCE9E2;
     max-width: var(--xl);
-    z-index: -1;
     display: flex;
     width: 100%;
     justify-content: center;
-    /* position: relative; */
-    margin: auto;
+    position: absolute;
+    margin-left: calc((100% - var(--xl))/2);
+    z-index: 200;
 }
 
-nav {
+header.header2 {
+    background-color: #00856F;
+    max-width: var(--xl);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: sticky;
+    margin: auto;
+    top: 0;
+    z-index: 101;
+}
+
+.header1 nav {
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -78,12 +97,12 @@ nav {
         
 }
 
-nav ul li {
+.header1 nav ul li {
     display: flex;
     align-items: center;
 }
 
-nav ul li a {
+.header1 nav ul li a {
     display: flex;
     position: relative;
     text-decoration: none;
@@ -94,7 +113,7 @@ nav ul li a {
                                             
 }
 
-nav ul li a:hover {
+.header1 nav ul li a:hover {
     position: relative;
     display: flex;
     text-decoration: none;
@@ -107,7 +126,7 @@ nav ul li a:hover {
                                                      
 }
 
-header nav div button {
+header.header1 nav div button {
     height: 38px;
     width: 190px;
     border-radius: 40px;
@@ -121,14 +140,79 @@ header nav div button {
     line-height: 18px;
 }
 
-.doctor {
+body header.header1 .doctor {
     font-size: 20px;
     color: #061800;
 }
 
-nav button:hover {
+.header1 nav button:hover {
     background-color: #00856F;
     color: white;
+    cursor: pointer;
+}
+
+.header2 nav {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    width: 100%;
+    max-width: var(--ld);
+        
+}
+
+.header2 nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+.header2 nav ul li a {
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+    color: #F7F9F970;
+    font-size: 16px;
+    font-weight: 400;
+                                            
+}
+
+.header2 nav ul li a:hover {
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    color: #F7F9F9;
+    font-size: 16px;
+    font-weight: 700;
+    border-bottom: 2px solid #F7F9F9;
+    line-height: 72px;
+                                                     
+}
+
+header.header2 nav div button {
+    height: 38px;
+    width: 190px;
+    border-radius: 40px;
+    background-color: #00856F;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+body header.header2 .doctor {
+    font-size: 20px;
+    color: white;
+}
+
+.header2 nav button:hover {
+    background-color: #F7F9F9;
+    color: #00856F;
     cursor: pointer;
 }
 
@@ -508,3 +592,4 @@ div.contacts {
 .sobre button {
     margin-top: 30px;
 }
+
